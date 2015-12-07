@@ -4,8 +4,28 @@ To test the Walmart web application transaction flow right from logging into the
 The test has been implemented using "Selenium WebDriver" tool and the programming language used to implement the test case is "JAVA".
 My familiarity with JAVA programming language and Selenium WebDriver is the reason behind my technical choices.
 
+Instructions to run the program:
+
+1. Make sure you have to add selenium.jar file in your package.
+2. Make sure that Java is installed.
+3. Download WallmartAssignment from GITHUB. Following is the url: https://github.com/maharshibhavanam/WalmartAssignment
+4. Open command prompt and change the directory to the downloaded WallmartAssignment project directory.
+5. Run "javac WalmartCustomerTransactionFlow.java" and hit enter.
+6. Run "java WalmartCustomerTransactionFlow" and press enter.
+7. While running the program it will ask for item to search for.
+8. Enter any one keyword from the list of keywords(iphone, tv, socks, dvd, toys) and press enter.
+9. After the program is completed, you will find the message "Test Passed for Walmart Cutomer Transaction Flow".
+
 Precondition: 1. User name and password should be valid. 
               2. There should be no item in the cart.
+	      3. Make sure you download "chromedriver.exe" from "www.seleniumhq.com" and set the folder directory in WalmartCustomerTransactionFlow.java file.
+
+Files in the project:
+1) WalmartCustomerTransactionFlow.java:
+	This class contains the flow of the application starting from initiating the Chrome driver to add item to the cart and verifying it.
+
+2) WalmartPageElements.java:
+	This class stores elements of webpages.
 
 Explanation of code:
 1) First a new instance of Chrome browser is created.
